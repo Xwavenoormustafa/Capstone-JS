@@ -1,7 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h1.size{
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 63px;
+}
+
+.lifestyle-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+.lifestyle-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.lifestyle-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
 .navbar-brand img {
@@ -11,6 +36,7 @@
 .shop {
   position: relative;
 }
+
 .badge {
   font-size: 0.8rem;
 }
@@ -145,5 +171,64 @@ body {
 .beg{
    margin-left: -73px;
    margin-top: 10px;
+}
+
+
+.special-offer {
+  background-color: #f5f0e6;
+  padding: 40px;
+  text-align: center;
+}
+.fruit-box-img {
+  max-width: 100%;
+  height: auto;
+}
+.countdown {
+  color: #2cb380;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.countdown-1{
+  color: #000000;
+  font-size: 15px;
+}
+ 
+.carrot-img {
+  position: absolute;
+  right: 0;
+  top: -21%;
+  width: 350px;
+  height: 300px;
+  margin-left:230px;
+}
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.product-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.product-price {
+  color: #28a745;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Lifestyle{
+background-image: url(./image/Main-services_bg1.jpg);
+background-size: cover;
+ background-size: cover; background-position: center;
+ background-position: center;
+ padding: 50px 0;
 }
 
