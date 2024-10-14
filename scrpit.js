@@ -11,3 +11,4 @@ document.getElementById('togglePassword').addEventListener('click', function (e)
         icon.classList.add('fa-eye');
     }
 });
+
