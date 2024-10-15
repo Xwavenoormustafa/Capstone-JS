@@ -16,9 +16,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-    
+
     <title>Capstone Project</title>
-    <style></style>
   </head>
   <body>
     <!-- Top bar with logo and buy now button -->
@@ -41,13 +40,19 @@
         <a class="navbar-brand" href="#">
           <img src="./image/Groffer-Logo (1).svg" alt="Grof" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <div class="row w-100">
+          <div class="row w-100 align-items-center"> <!-- Added align-items-center to row -->
             <div class="col-lg-8 col-md-6 col-sm-12">
               <form class="input-group">
                 <button
@@ -79,31 +84,26 @@
                   aria-label="Search products"
                 />
                 <button class="btn btn-outline-secondary" type="submit">
-                  <iconify-icon
-                    icon="material-symbols-light:search"
-                  ></iconify-icon>
+                  <iconify-icon icon="material-symbols-light:search"></iconify-icon>
                 </button>
               </form>
             </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-end align-items-center mt-3 mt-lg-0"
-            >
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-end align-items-center mt-3 mt-lg-0">
               <div class="d-inline-flex align-items-center me-4">
                 <iconify-icon icon="mdi:user" class="fs-1"></iconify-icon>
-                <div class="ms-2">
-                  <a href="#" class="text-decoration-none text-dark">Hello, Sign in</a> <br />
+                <div class="ms-2 d-flex flex-column align-items-start">
+                  <button class="btn btn-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#authModal">
+                    Hello, Sign in
+                  </button>
                   <a href="#" class="text-decoration-none text-dark">Account & Lists</a>
                 </div>
               </div>
+    
               <div class="d-inline-flex align-items-center position-relative">
-           
                 <iconify-icon icon="mdi:shopping" class="fs-1"></iconify-icon>
-                <span
-                  class="badge beg bg-success position-absolute top-0 start-100 translate-middle p-1"
-                  >0</span
-                >
+                <span class="badge bg-success position-absolute top-0  translate-middle p-1" style="margin-left: 35px; margin-top: 8px;">0</span>
                 <div class="ms-2">
-                  <a href="#" class="text-dark text-decoration-none">My Cart</a><br/>
+                  <a href="#" class="text-dark text-decoration-none">My Cart</a><br />
                   <span>€0.00</span>
                 </div>
               </div>
@@ -130,20 +130,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdow role="button" data-bs-toggle="dropdow aria-expanded="false">
                 <iconify-icon icon="mdi:menu" class="fs-5"></iconify-icon> Shop
                 by Categories
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Category 1</a></li>
-                <li><a class="dropdown-item" href="#">Category 2</a></li>
+                <li><a class="dropdown-item" href="#">Fresh Vegetables</a></li>
+                <li><a class="dropdown-item" href="#">Meat & Seatfood</a></li>
+                <li><a class="dropdown-item" href="#">Pantry Staple</a></li>
+                <li><a class="dropdown-item" href="#">Seasonal Box</a></li>
+                <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
+                <li><a class="dropdown-item" href="#">Bread & Butter</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -165,7 +162,7 @@
               <a class="nav-link" href="#">Pages</a>
             </li>
           </ul>
-
+    
           <!-- Contact Information and "Get a Quote" Button -->
           <div class="d-flex align-items-center">
             <!-- Phone number -->
@@ -173,175 +170,265 @@
               <iconify-icon icon="mdi:phone" class="fs-5 me-2"></iconify-icon>
               <span>+0 1800 7777 000</span>
             </div>
-
+    
             <!-- Get a Quote Button -->
             <a href="#" class="btn btn-warning">Get a Quote</a>
           </div>
         </div>
       </div>
     </nav>
+    
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="hero-section bg-white p-5">
       <div class="container">
         <div class="row align-items-center">
           <!-- Text Column -->
-          <div class="col-md-6 ">
-            <p class="mb-2 fz-1 ">Starting at <span class="highlight">$22</span></p>
-            <h1 class="hero-text size">
+          <div class="col-md-6">
+            <p class="mb-2 fz-1">
+              Starting at <span class="highlight">$22</span>
+            </p>
+            <h1 class="hero-text fs-1 fw-bold size ">
               Grocery Right <br />
               At Your Door
             </h1>
-            <p class="hero-subtext">
+            <p class="hero-subtext text-secondary">
               Only this weekend for the remaining of the month.
             </p>
-            <a href="#" class="btn shop-now-btn mt-3 btn btn-warning"
+            <a href="#" class="btn shop-now-btn fs-5 mt-3 p-1 btn btn-warning"
               >Shop Now</a
             >
           </div>
-          <div class="col-md-6 ">
-            <img src="./image/Main-slider_pic.png" alt="Groceries"
-              class="hero-image img-fluid w-75"/>
+          <div class="col-md-6">
+            <img
+              src="./image/Main-slider_pic.png"
+              alt="Groceries"
+              class="hero-image img-fluid w-100"
+            />
           </div>
         </div>
       </div>
     </section>
-    <hr>
+    <hr />
     <div class="container py-5">
       <div class="row">
-          <div class="col-md-4">
-              <div class="feature-box">
-                  <img src="./image/Main-about1.svg" alt="Icon 1">
-                  <h4>Grown Today, Delivered Tomorrow</h4>
-                  <p>Our organic fruit and vegetable are grown by farmers who use only natural fertilisers on their own land.</p>
-              </div>
+        <div class="col-md-4">
+          <div class="feature-box text-center ">
+            <img src="./image/Main-about1.svg" alt="Icon 1" />
+            <h4>Grown Today, Delivered Tomorrow</h4>
+            <p class="fs-5 ">
+              Our organic fruit and vegetable are grown by farmers who use only
+              natural fertilisers on their own land.
+            </p>
           </div>
-          <div class="col-md-4">
-              <div class="feature-box">
-                  <img src="./image/Main-about2.svg" alt="Icon 2">
-                  <h4>Not Your Average Grocery Delivery</h4>
-                  <p>Save yourself time, money and a bit of sanity with these easy and affordable grocery delivery services.</p>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box text-center">
+            <img src="./image/Main-about2.svg" alt="Icon 2" />
+            <h4 class="fw-bold fs-4">Not Your Average Grocery Delivery</h4>
+            <p class="fs-5 text-secondary-emphasis">
+              Save yourself time, money and a bit of sanity with these easy and
+              affordable grocery delivery services.
+            </p>
           </div>
-          <div class="col-md-4">
-              <div class="feature-box">
-                  <img src="./image/Main-about3.svg" alt="Icon 3">
-                  <h4>Your Favorites on Autopilot</h4>
-                  <p>Put healthy eating on autopilot with a mix of vegetables, fruits and other organic produce & clean ingredients.</p>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box text-center">
+            <img src="./image/Main-about3.svg" alt="Icon 3"/>
+            <h4>Your Favorites on Autopilot</h4>
+            <p class="fs-5 text-secondary-emphasis">
+              Put healthy eating on autopilot with a mix of vegetables, fruits
+              and other organic produce & clean ingredients.
+            </p>
           </div>
+        </div>
       </div>
-  </div>
-  <hr>
+    </div>
+    <hr />
 
-  <div>
-   <div class="container text-center mt-3"> <h1>Top Categories</h1></div>
-  </div>
-  <div class="container my-5">
-    <div class="row">
+    <div>
+      <div class="container text-center mt-3"><h1>Top Categories</h1></div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
         <!-- Category Card -->
         <div class="col-md-3">
-            <div class="category-card">
-                <div class="category-overlay"></div>
-                <h2>Paleo</h2>
-                <p>9 Products</p>
-                <a href="#" class="btn btn-outline-light">View All Items</a>
-            </div>
+          <div class="category-card text-white">
+            <div class="category-overlay"></div>
+            <h2>Paleo</h2>
+            <p>9 Products</p>
+            <a href="#" class="btn btn-outline-light">View All Items</a>
+          </div>
         </div>
 
         <!-- Product Cards -->
         <div class="col-md-9">
-            <div class="row">
-                <!-- Product 1 -->
-                <div class="col-md-3">
-                    <div class="card product-card position-relative p-3">
-                      <img src="./image/Angro-Product28.jpg" class="card-img-top" alt="Product 1">
-                        <div class="add-to-cart">
-                          <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-1 mx-1"></iconify-icon>
-                        </div>
-                        <div class="card-body">
-                          <iconify-icon icon="material-symbols:star" class="stars"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star" class="stars"></iconify-icon>
-                         <img src="./image/preview.png" width="15px" class="stac" alt="">
-                          <iconify-icon icon="material-symbols:star"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star"></iconify-icon>
-                            <h5 class="card-title">Broccoli and Cauliflower Mix</h5>
-                            <p class="price">€12.00</p>
-                            <p class="text-muted">per Kilogram</p>
-                        </div>
-                    </div>
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-3">
+              <div class="card product-card position-relative p-3">
+                <img
+                  src="./image/Angro-Product28.jpg"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="add-to-cart">
+                  <iconify-icon
+                    icon="mdi:shopping"
+                    class="text-warning-emphasis bg-warning rounded p-1 mx-1"
+                  ></iconify-icon>
                 </div>
-
-                <!-- Product 2 -->
-                <div class="col-md-3">
-                    <div class="card product-card position-relative p-3">
-                      <img src="./image/Angro-Product25.jpg" class="card-img-top" alt="Product 1">
-                        <div class="add-to-cart">
-                          <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
-                        </div>
-                        <div class="card-body">
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                            <h5 class="card-title">Cadbury Crunchie Chocolate Bar</h5>
-                            <p class="price">€90.00</p>
-                            <p class="text-muted">per Kilogram</p>
-                        </div>
-                    </div>
+                <div class="card-body">
+                  <iconify-icon
+                    icon="material-symbols:star"
+                    class="stars text-warning"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star"
+                    class="stars text-warning"
+                  ></iconify-icon>
+                  <img
+                    src="./image/preview.png   width="15px"
+                    class="stac"
+                    alt=""
+                  />
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star"></iconify-icon>
+                  <h5 class="card-title">Broccoli and Cauliflower Mix</h5>
+                  <p class="price text-dark mt-4">€12.00</p>
+                  <p class="text-muted">per Kilogram</p>
                 </div>
-
-                <!-- Product 3 -->
-                <div class="col-md-3">
-                    <div class="card product-card position-relative p-3">
-                      <img src="./image/Angro-Product06.jpg" class="card-img-top" alt="Product 1">
-                        <div class="add-to-cart">
-                          <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
-                        </div>
-                        <div class="card-body">
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                            <h5 class="card-title">Fresh For The Bold Ground</h5>
-                            <p class="price">€43.00</p>
-                            <p class="text-muted">per Kilogram</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="col-md-3">
-                    <div class="card product-card position-relative p-3">
-                      <img src="./image/Angro-Product09.jpg" class="card-img-top" alt="Product 1">
-                        <div class="add-to-cart">
-                          <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-1"></iconify-icon>
-                        </div>
-                        <div class="card-body">
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                            <h5 class="card-title">Frito-Lay Doritos Cheetos Mix</h5>
-                            <p class="price">€80.00</p>
-                            <p class="text-muted">per Kilogram</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+              <div class="card product-card position-relative p-3">
+                <img
+                  src="./image/Angro-Product25.jpg"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="add-to-cart">
+                  <iconify-icon
+                    icon="mdi:shopping"
+                    class="text-warning-emphasis bg-warning rounded p-2"
+                  ></iconify-icon>
+                </div>
+                <div class="card-body">
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <h5 class="card-title">Cadbury Crunchie Chocolate Bar</h5>
+                  <p class="price">€90.00</p>
+                  <p class="text-muted">per Kilogram</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+              <div class="card product-card position-relative p-3">
+                <img
+                  src="./image/Angro-Product06.jpg"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="add-to-cart">
+                  <iconify-icon
+                    icon="mdi:shopping"
+                    class="text-warning-emphasis bg-warning rounded p-2"
+                  ></iconify-icon>
+                </div>
+                <div class="card-body">
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <h5 class="card-title">Fresh For The Bold Ground</h5>
+                  <p class="price">€43.00</p>
+                  <p class="text-muted">per Kilogram</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-3">
+              <div class="card product-card position-relative p-3">
+                <img
+                  src="./image/Angro-Product09.jpg"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="add-to-cart">
+                  <iconify-icon
+                    icon="mdi:shopping"
+                    class="text-warning-emphasis bg-warning rounded p-1"
+                  ></iconify-icon>
+                </div>
+                <div class="card-body">
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <h5 class="card-title">Frito-Lay Doritos Cheetos Mix</h5>
+                  <p class="price">€80.00</p>
+                  <p class="text-muted">per Kilogram</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="container my-5">
-  <div class="row">
-      <!-- Category Card -->
-      <div class="col-md-3">
-        <div class="card product-card position-relative p-3">
-          <img src="./image/Angro-Product09.jpg" class="card-img-top" alt="Product 1">
+    <div class="container my-5">
+      <div class="row">
+        <!-- Category Card -->
+        <div class="col-md-3 w-25">
+          <div class="card product-card position-relative p-3">
+            <img
+              src="./image/Angro-Product09.jpg"
+              class="card-img-top"
+              alt="Product 1"
+            />
             <div class="add-to-cart">
-              <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-1"></iconify-icon>
+              <iconify-icon
+                icon="mdi:shopping"
+                class="text-warning-emphasis bg-warning rounded p-1"
+              ></iconify-icon>
             </div>
             <div class="card-body">
               <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
@@ -349,468 +436,833 @@
               <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
               <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
               <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                <h5 class="card-title">Frito-Lay Doritos Cheetos Mix</h5>
-                <p class="price">€80.00</p>
-                <p class="text-muted">per Kilogram</p>
+              <h5 class="card-title ">Frito-Lay Doritos Cheetos Mix</h5>
+              <p class="price">€80.00</p>
+              <p class="text-muted">per Kilogram</p>
             </div>
+          </div>
         </div>
-    </div>
 
-      <!-- Product Cards -->
-      <div class="col-md-9">
+        <!-- Product Cards -->
+        <div class="col-md-9">
           <div class="row">
-              <!-- Product 1 -->
-              <div class="col-md-3">
-                  <div class="card product-card position-relative p-3">
-                      <img src="./image/Angro-Product28.jpg" class="card-img-top" alt="Product 1">
-                      <div class="add-to-cart">
-                        <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
-                      </div>
-                      <div class="card-body">
-                        <iconify-icon icon="material-symbols:star" class="stars"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star" class="stars"></iconify-icon>
-                       <img src="./image/preview.png" width="15px" class="stac" alt="">
-                        <iconify-icon icon="material-symbols:star"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star"></iconify-icon>
-                          <h5 class="card-title">Broccoli and Cauliflower Mix</h5>
-                          <p class="price">€12.00</p>
-                          <p class="text-muted">per Kilogram</p>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Product 2 -->
-              <div class="col-md-3">
-                  <div class="card product-card position-relative p-3">
-                    <img src="./image/Angro-Product25.jpg" class="card-img-top" alt="Product 1">
-                      <div class="add-to-cart">
-                        <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
-                      </div>
-                      <div class="card-body">
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <h5 class="card-title">Cadbury Crunchie Chocolate Bar</h5>
-                          <p class="price">€90.00</p>
-                          <p class="text-muted">per Kilogram</p>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Product 3 -->
-              <div class="col-md-3">
-                  <div class="card product-card position-relative p-3">
-                    <img src="./image/Angro-Product06.jpg" class="card-img-top" alt="Product 1">
-                      <div class="add-to-cart">
-                        <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
-                      </div>
-                      <div class="card-body">
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                        <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
-                          <h5 class="card-title">Fresh For The Bold Ground</h5>
-                          <p class="price">€43.00</p>
-                          <p class="text-muted">per Kilogram</p>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Product 4 -->
-              
-              <div class="col-md-3">
-                <div class="category-card">
-                    <div class="category-overlay"></div>
-                    <h2>Paleo</h2>
-                    <p>9 Products</p>
-                    <a href="#" class="btn btn-outline-light">View All Items</a>
+           
+            <div class="col-md-3">
+              <div class="card product-card position-relative p-3">
+                <img
+                  src="./image/Angro-Product06.jpg"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="add-to-cart">
+                  <iconify-icon
+                    icon="mdi:shopping"
+                    class="text-warning-emphasis bg-warning rounded p-2"
+                  ></iconify-icon>
                 </div>
+                <div class="card-body">
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <h5 class="card-title">Fresh For The Bold Ground</h5>
+                  <p class="price">€43.00</p>
+                  <p class="text-muted">per Kilogram</p>
+                </div>
+              </div>
             </div>
-          </div>
-      </div>
-  </div>
-</div>
 
-<section class="special-offer position-relative">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Fruit Box Image -->
-      <div class="col-md-6 text-center">
-        <img src="./image/Main_Deal-Banner.png" alt="Organic Fruit Box" class="fruit-box-img">
-      </div>
-      <!-- Text and Countdown -->
-      <div class="col-md-6">
-        <p class="text-warning">Special Offer</p>
-        <h1 class="display-4">Organic Fruit Box</h1>
-        <p>Organic foods are the only source which we can rely on to take proper health care. Organic food is the most nutritious food and should be consumed by everyone.</p>
-        <!-- Countdown Timer -->
-        <div class="countdown">
-          <div class="d-flex text-center align-items-center justify-content-center">
-            <div>
-              <span>-65-5</span>
-              <p class="countdown-1">Days</p>
+            <div class="col-md-3">
+              <div class="card product-card position-relative p-3">
+                <img
+                  src="./image/Angro-Product25.jpg"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="add-to-cart">
+                  <iconify-icon
+                    icon="mdi:shopping"
+                    class="text-warning-emphasis bg-warning rounded p-2"
+                  ></iconify-icon>
+                </div>
+                <div class="card-body">
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <h5 class="card-title">Cadbury Crunchie Chocolate Bar</h5>
+                  <p class="price">€90.00</p>
+                  <p class="text-muted">per Kilogram</p>
+                </div>
+              </div>
             </div>
-            <div>
 
-              
-              <span> -3</span>
-              <p class="countdown-1">Hours</p>
+            <!-- Product 3 -->
+            <div class="col-md-3">
+              <div class="card product-card position-relative p-3">
+                <img
+                  src="./image/Angro-Product06.jpg"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="add-to-cart">
+                  <iconify-icon
+                    icon="mdi:shopping"
+                    class="text-warning-emphasis bg-warning rounded p-2"
+                  ></iconify-icon>
+                </div>
+                <div class="card-body">
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="material-symbols:star-outline"
+                  ></iconify-icon>
+                  <h5 class="card-title">Fresh For The Bold Ground</h5>
+                  <p class="price">€43.00</p>
+                  <p class="text-muted">per Kilogram</p>
+                </div>
+              </div>
             </div>
-            <br>  
-            <div>
-              <span>: 0</span>
-              <p class="countdown-1">Mins</p>
-            </div>
-            <div>
-              <span>- : 14</span>
-              <p class="countdown-1">Seconds</p>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn btn-warning mt-3">View All Deals</a>
-      </div>
-    </div>
-  </div>
-  <img src="./image/carrot.png"  alt="Carrot" class="carrot-img d-none d-md-block">
-</section>
 
-<!-- Best Selling Items -->
+            <!-- Product 4 -->
 
-<div class="container my-4">
-  <div class="row justify-content-between align-items-center">
-    <!-- Left Side: Title -->
-    <div class="col-auto">
-      <h2>Best Selling Items</h2>
-    </div>
-
-   
-    <div class="col-auto">
-      <div class="btn-group" role="group">
-        <button type="button" class="btn btn-success">Bakery</button>
-        <a href="#" class="btn">Granola</a>
-        <a href="#" class="btn">Muesli</a>
-      </div>
-    </div>
-  </div>
-</div>
-<hr class="container">
-
-<div class="container mt-4">
-  <div class="row g-3">
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product21.jpg" alt="Morrisons The Best Jumbo">
-        <h5>Morrisons The Best Jumbo</h5>
-        <p class="product-price">€45.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product23.jpg" alt="Goodfellas Baked Thin Pizza Salami">
-        <h5>Goodfellas Baked Thin Pizza Salami</h5>
-        <p class="product-price">€44.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product24.jpg" alt="Goodfellas Baked Thin Pizza Salami">
-        <h5>Birds Eye Crispy Chicken Dippers</h5>
-        <p class="product-price">€22.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Main-banner1.jpg" alt="20x Fruit Baskets">
-        <h5>20x Fruit Baskets at $199</h5>
-        <p class="product-price">$199.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product08.jpg" alt="Low Sodium Light Salted Snack Nuts">
-        <h5>Low Sodium Light Salted Snack Nuts</h5>
-        <p class="product-price">€44.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product14.jpg" alt="BetterBody Foods Organic Chia">
-        <h5>BetterBody Foods Organic Chia</h5>
-        <p class="product-price">€50.00</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container my-4">
-  <div class="row justify-content-between align-items-center">
-    <!-- Left Side: Title -->
-    <div class="col-auto">
-      <h2>Freshest Products</h2>
-    </div>
-   
-    <div class="col-auto">
-      <div class="btn-group" role="group">
-        <button type="button" class="btn btn-success">Apples</button>
-        <a href="#" class="btn">BERRIES</a>
-        <a href="#" class="btn">CITRUS</a>
-      </div>
-    </div>
-  </div>
-</div>
-<hr>
-
-<div class="container mt-4">
-  <div class="row g-3">
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product30.jpg" alt="Morrisons The Best Jumbo">
-        <h5>Jacob’s Baked Crinklys Cheese</h5>
-        <p class="product-price">€10.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product17.jpg" alt="Goodfellas Baked Thin Pizza Salami">
-        <h5>Green Mountain Coffee Roast</h5>
-        <p class="product-price">€22.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Main-banners2.jpg" alt="Goodfellas Baked Thin Pizza Salami">
-        <h5>Potato Sacks for</h5>
-        <p class="product-price">$10 a piece</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product.jpg" alt="20x Fruit Baskets">
-        <h5>2Frito-Lay Doritos <br> Cheetos Mix</h5>
-        <p class="product-price">€80.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro-Product12.jpg" alt="Low Sodium Light Salted Snack Nuts">
-        <h5>Nature’s Bakery <br> Whole Wheat Bars</h5>
-        <p class="product-price">€13.00</p>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="product-card">
-        <img src="./image/Angro.jpg" alt="BetterBody Foods Organic Chia">
-        <h5>Fresh For The Bold <br> Ground</h5>
-        <p class="product-price">€43.00</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid Lifestyle">
-  <div class="container text-center">
-    <h2 class="mb-5 text-white">Shop by Lifestyle</h2>
-    <div class="back-imd-set d-none d-md-flex">
-      <div class="container-fluid mt-3 pt-3 mb-5">
-        <div class="row justify-content-center">
-          <div class="col-6 col-md-2 mb-3">
-            <div class="lifestyle-card">
-              <img src="./image/download (1).png" class="lifestyle-icon w-75" alt="Vegan">
-              <p>Vegan</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-2 mb-3">
-            <div class="lifestyle-card">
-              <img src="./image/Main-category2 (1).svg" class="lifestyle-icon w-75" alt="Gluten-Free">
-              <p>Gluten-Free</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-2 mb-3">
-            <div class="lifestyle-card">
-              <img src="./image/23.svg" class="lifestyle-icon mx-auto w-75" alt="Paleo">
-              <p>Paleo</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-2 mb-3">
-            <div class="lifestyle-card">
-              <img src="./image/keto.svg" class="lifestyle-icon mx-auto w-75" alt="Keto">
-              <p>Keto</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-2 mb-3">
-            <div class="lifestyle-card">
-              <img src="./image/flex.svg" class="lifestyle-icon mx-auto w-75" alt="Flexitarian">
-              <p>Flexitarian</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-2 mb-3">
-            <div class="lifestyle-card">
-              <img src="./image/fast.svg" class="lifestyle-icon mx-auto w-75" alt="Fasting">
-              <p>Fasting</p>
+            <div class="col-md-3 ">
+              <div class="category-card">
+                <div class="category-overlay"></div>
+                <h2 class="text-white">Paleo</h2>
+                <p class="text-white">9 Products</p>
+                <a href="#" class="btn btn-outline-light text-white">View All Items</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="container mt-4">
-  <div class="row">
-    <!-- Left Column: Text Overlay on Image -->
-    <div class="col-lg-6 col-md-12 mb-4 position-relative">
-      <img src="./image/mango.png" alt="Lemon Cans Image" class="img-fluid w-100">
-      <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
-        <p class="text-muted m-2">10% At Any Nearest Stores.</p>
-        <h4 class="fw-bold p-2">30% Off On <br> All Veggies</h4>
-        <a href="#" class="btn btn-success m-2">Shop Now</a>
+    <section class="special-offer bg-white text-center position-relative">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Fruit Box Image -->
+          <div class="col-md-6 text-center">
+            <img
+              src="./image/Main_Deal-Banner.png"
+              alt="Organic Fruit Box"
+              class="fruit-box-img"
+            />
+          </div>
+          <!-- Text and Countdown -->
+          <div class="col-md-6">
+            <p class="text-warning">Special Offer</p>
+            <h1 class="display-4">Organic Fruit Box</h1>
+            <p>
+              Organic foods are the only source which we can rely on to take
+              proper health care. Organic food is the most nutritious food and
+              should be consumed by everyone.
+            </p>
+            <!-- Countdown Timer -->
+            <div class="countdown fw-bold">
+              <div
+                class="d-flex text-center align-items-center justify-content-center"
+              >
+                <div>
+                  <span>-65-5</span>
+                  <p class="countdown-1 text-dark">Days</p>
+                </div>
+                <div>
+                  <span> -3</span>
+                  <p class="countdown-1 text-dark">Hours</p>
+                </div>
+                <br />
+                <div>
+                  <span>: 0</span>
+                  <p class="countdown-1 text-dark">Mins</p>
+                </div>
+                <div>
+                  <span>- : 14</span>
+                  <p class="countdown-1 text-dark">Seconds</p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-warning mt-3">View All Deals</a>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./image/carrot.png"
+        alt="Carrot"
+        class="carrot-img d-none d-md-block"
+      />
+    </section>
+
+    <!-- Best Selling Items -->
+
+    <div class="container my-4">
+      <div class="row justify-content-between align-items-center">
+        <!-- Left Side: Title -->
+        <div class="col-auto">
+          <h2>Best Selling Items</h2>
+        </div>
+
+        <div class="col-auto">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-success">Bakery</button>
+            <a href="#" class="btn">Granola</a>
+            <a href="#" class="btn">Muesli</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="container" />
+
+    <div class="container mt-4">
+      <div class="row g-3">
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img
+              src="./image/Angro-Product21.jpg"
+              alt="Morrisons The Best Jumbo"
+            />
+            <h5 class="mt-3">Morrisons The Best Jumbo</h5>
+            <p class="product-price">€45.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img
+              src="./image/Angro-Product23.jpg"
+              alt="Goodfellas Baked Thin Pizza Salami"
+            />
+            <h5 class="mt-3">Goodfellas Baked Thin Pizza Salami</h5>
+            <p class="product-price">€44.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center ">
+            <img
+              src="./image/Angro-Product24.jpg"
+              alt="Goodfellas Baked Thin Pizza Salami"
+            />
+            <h5 class="mt-3">Birds Eye Crispy Chicken Dippers</h5>
+            <p class="product-price">€22.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img src="./image/Main-banner1.jpg" alt="20x Fruit Baskets" />
+            <h5 class="mt-3">20x Fruit Baskets at $199</h5>
+            <p class="product-price">$199.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img
+              src="./image/Angro-Product08.jpg"
+              alt="Low Sodium Light Salted Snack Nuts"
+            />
+            <h5 class="mt-3">Low Sodium Light Salted Snack Nuts</h5>
+            <p class="product-price">€44.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img
+              src="./image/Angro-Product14.jpg"
+              alt="BetterBody Foods Organic Chia"
+            />
+            <h5 class="mt-3 text-center">BetterBody Foods Organic Chia</h5>
+            <p class="product-price">€50.00</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Right Column: Text Overlay on Image -->
-    <div class="col-lg-6 col-md-12 mb-4 position-relative">
-      <img src="./image/red.jpeg" alt="Fruits & Nuts Image" class="img-fluid w-100">
-      <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
-        <p class="text-muted m-2">20% Online Orders Only.</p>
-        <h4 class="fw-bold m-2">Organic <br> Fruits & Nuts</h4>
-        <a href="#" class="btn btn-success m-2">Shop Now</a>
+    <div class="container my-4">
+      <div class="row justify-content-between align-items-center">
+        <!-- Left Side: Title -->
+        <div class="col-auto">
+          <h2>Freshest Products</h2>
+        </div>
+
+        <div class="col-auto">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-success">Apples</button>
+            <a href="#" class="btn">BERRIES</a>
+            <a href="#" class="btn">CITRUS</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+    <hr />
 
-<div class="container my-5">
-  <div class="row text-center">
-      <!-- Local Pickup -->
-      <div class="col-12 col-md-3 mb-4">
-          <img src="./image/Main_service1-150x150.png" alt="Local Pickup" class="img-fluid">
+    <div class="container mt-4">
+      <div class="row g-3">
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img
+              src="./image/Angro-Product30.jpg"
+              alt="Morrisons The Best Jumbo"
+            />
+            <h5 class="mt-3 text-center">Jacob’s Baked Crinklys Cheese</h5>
+            <p class="product-price fw-bold text-success">€10.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img
+              src="./image/Angro-Product17.jpg"
+              alt="Goodfellas Baked Thin Pizza Salami"
+            />
+            <h5 class="mt-3 text-center">Green Mountain Coffee Roast</h5>
+            <p class="product-price fw-bold text-success">€22.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img
+              src="./image/Main-banners2.jpg"
+              alt="Goodfellas Baked Thin Pizza Salami"
+            />
+            <h5 class="mt-3 text-center">Potato Sacks for</h5>
+            <p class="product-price fw-bold text-success">$10 a piece</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img src="./image/Angro-Product.jpg" alt="20x Fruit Baskets" />
+            <h5 class="mt-3 text-center">
+              2 Frito-Lay Doritos <br />
+              Cheetos Mix
+            </h5>
+            <p class="product-price fw-bold text-success">€80.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card">
+            <img
+              src="./image/Angro-Product12.jpg"
+              alt="Low Sodium Light Salted Snack Nuts"
+            />
+            <h5 class="mt-3 text-center">
+              Nature’s Bakery <br />
+              Whole Wheat Bars
+            </h5>
+            <p class="product-price fw-bold text-success">€13.00</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="product-card text-center">
+            <img src="./image/Angro.jpg" alt="BetterBody Foods Organic Chia" />
+            <h5 class="mt-3 text-center">
+              Fresh For The Bold <br />
+              Ground
+            </h5>
+            <p class="product-price fw-bold text-success">€43.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid Lifestyle">
+      <div class="container text-center">
+        <h2 class="mb-5 text-white">Shop by Lifestyle</h2>
+        <div class="back-imd-set d-none d-md-flex">
+          <div class="container-fluid mt-3 pt-3 mb-5">
+            <div class="row justify-content-center">
+              <div class="col-6 col-md-2 mb-3">
+                <div class="lifestyle-card bg-white text-center">
+                  <img
+                    src="./image/download (1).png"
+                    class="lifestyle-icon w-75"
+                    alt="Vegan"
+                  />
+                  <p>Vegan</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <div class="lifestyle-card bg-white text-center">
+                  <img
+                    src="./image/Main-category2 (1).svg"
+                    class="lifestyle-icon w-75"
+                    alt="Gluten-Free"
+                  />
+                  <p>Gluten-Free</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <div class="lifestyle-card">
+                  <img
+                    src="./image/23.svg"
+                    class="lifestyle-icon mx-auto w-75"
+                    alt="Paleo"
+                  />
+                  <p>Paleo</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <div class="lifestyle-card">
+                  <img
+                    src="./image/keto.svg"
+                    class="lifestyle-icon mx-auto w-75"
+                    alt="Keto"
+                  />
+                  <p>Keto</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <div class="lifestyle-card">
+                  <img
+                    src="./image/flex.svg"
+                    class="lifestyle-icon mx-auto w-75"
+                    alt="Flexitarian"
+                  />
+                  <p>Flexitarian</p>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <div class="lifestyle-card">
+                  <img
+                    src="./image/fast.svg"
+                    class="lifestyle-icon mx-auto w-75"
+                    alt="Fasting"
+                  />
+                  <p>Fasting</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Left Column: Text Overlay on Image -->
+        <div class="col-lg-6 col-md-12 mb-4 position-relative">
+          <img
+            src="./image/mango.png"
+            alt="Lemon Cans Image"
+            class="img-fluid w-100"
+          />
+          <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+            <p class="text-muted m-2">10% At Any Nearest Stores.</p>
+            <h4 class="fw-bold p-2">
+              30% Off On <br />
+              All Veggies
+            </h4>
+            <a href="#" class="btn btn-success m-2">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Text Overlay on Image -->
+        <div class="col-lg-6 col-md-12 mb-4 position-relative">
+          <img
+            src="./image/red.jpeg"
+            alt="Fruits & Nuts Image"
+            class="img-fluid w-100"
+          />
+          <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+            <p class="text-muted m-2">20% Online Orders Only.</p>
+            <h4 class="fw-bold m-2">
+              Organic <br />
+              Fruits & Nuts
+            </h4>
+            <a href="#" class="btn btn-success m-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row text-center">
+        <!-- Local Pickup -->
+        <div class="col-12 col-md-3 mb-4">
+          <img
+            src="./image/Main_service1-150x150.png"
+            alt="Local Pickup"
+            class="img-fluid"
+          />
           <h5 class="mt-3">Local Pickup</h5>
           <p>Get orders faster while avoiding shipping fees</p>
-      </div>
-      <!-- Local Delivery -->
-      <div class="col-12 col-md-3 mb-4">
-          <img src="./image/main 2.png" alt="Local Delivery" class="img-fluid">
+        </div>
+        <!-- Local Delivery -->
+        <div class="col-12 col-md-3 mb-4">
+          <img
+            src="./image/main 2.png"
+            alt="Local Delivery"
+            class="img-fluid"
+          />
           <h5 class="mt-3">Local Delivery</h5>
           <p>100% curbside recyclable boxes on demand</p>
-      </div>
-      <!-- Conscious Eaters -->
-      <div class="col-12 col-md-3 mb-4">
-          <img src="./image/sawa pann.png" alt="Conscious Eaters" class="img-fluid">
+        </div>
+        <!-- Conscious Eaters -->
+        <div class="col-12 col-md-3 mb-4">
+          <img
+            src="./image/sawa pann.png"
+            alt="Conscious Eaters"
+            class="img-fluid"
+          />
           <h5 class="mt-3">Conscious Eaters</h5>
           <p>We are supporting small farmers and producers</p>
-      </div>
-      <!-- Delicious & New Food -->
-      <div class="col-12 col-md-3 mb-4">
-          <img src="./image/akhroot.png" alt="Delicious & New Food" class="img-fluid">
+        </div>
+        <!-- Delicious & New Food -->
+        <div class="col-12 col-md-3 mb-4">
+          <img
+            src="./image/akhroot.png"
+            alt="Delicious & New Food"
+            class="img-fluid"
+          />
           <h5 class="mt-3">Delicious & New Food</h5>
           <p>Feel great about what you eat every day</p>
+        </div>
       </div>
-  </div>
-</div>
-<div class="position-relative py-5">
-  <img alt="A bowl of mixed vegetable salad" class="position-absolute" style="top: -50px; right: 50px; width: 300px; height: auto;" src="./image/BG-02.png" />
-  <div style="background-color: #e6f0f5;" class=" py-5">
-      <div class="container text-center my-5">
-          <h2 class="text-warning" style="font-size: 24px; margin-bottom: 10px;">Client Reviews</h2>
-          <h3 class="font-weight-bold" style="color: #333; font-size: 36px; margin-bottom: 40px;">From The People</h3>
+    </div>
+    <div class="position-relative py-5">
+      <img
+        alt="A bowl of mixed vegetable salad"
+        class="position-absolute"
+        style="top: -50px; right: 50px; width: 300px; height: auto"
+        src="./image/BG-02.png"
+      />
+      <div style="background-color: #e6f0f5" class="py-5">
+        <div class="container text-center my-5">
+          <h2 class="text-warning" style="font-size: 24px; margin-bottom: 10px">
+            Client Reviews
+          </h2>
+          <h3
+            class="font-weight-bold"
+            style="color: #333; font-size: 36px; margin-bottom: 40px"
+          >
+            From The People
+          </h3>
           <div class="row justify-content-center">
-              <div class="col-md-3 mb-4">
-                  <img alt="A person holding fresh vegetables in a garden" class="rounded-4" src="./image/Main-testimon3-350x350.jpg" width="120" height="120" />
-                  <p class="text-muted fw-medium my-3" style="font-size: 17px;">
-                      “What a beautiful haul from Groffer Market week! It is basically a chef’s dream. Definitely have a lot to work.”
-                  </p>
-                  <h4 class="text-success font-weight-bold" style="font-size: 18px;">Martin Culich</h4>
-              </div>
-              <div class="col-md-3 mb-4">
-                  <img alt="A person holding a basket of fresh produce" class="rounded-4" src="./image/Main-Testimon1-350x350.jpg" width="120" height="120" />
-                  <p class="text-muted fw-medium my-3" style="font-size: 17px;">
-                      “Highly recommending them! Groffer is delivered to door and honestly, it does seem cheaper compared to store.”
-                  </p>
-                  <h4 class="text-success font-weight-bold" style="font-size: 18px;">Naren Doe</h4>
-              </div>
-              <div class="col-md-3 mb-4">
-                  <img alt="A person holding a box of fresh produce in a store" class="rounded-4" src="./image/Main-Testimon2-350x350.jpg" width="120" height="120" />
-                  <p class="text-muted fw-medium my-3" style="font-size: 17px;">
-                      “Groffer always has a unique selection of items I don’t normally see in the store. Their produce is top-notch.”
-                  </p>
-                  <h4 class="text-success font-weight-bold" style="font-size: 18px;">Louis Doe</h4>
-              </div>
+            <div class="col-md-3 mb-4">
+              <img
+                alt="A person holding fresh vegetables in a garden"
+                class="rounded-4"
+                src="./image/Main-testimon3-350x350.jpg"
+                width="120"
+                height="120"
+              />
+              <p class="text-muted fw-medium my-3" style="font-size: 17px">
+                “What a beautiful haul from Groffer Market week! It is basically
+                a chef’s dream. Definitely have a lot to work.”
+              </p>
+              <h4 class="text-success font-weight-bold" style="font-size: 18px">
+                Martin Culich
+              </h4>
+            </div>
+            <div class="col-md-3 mb-4">
+              <img
+                alt="A person holding a basket of fresh produce"
+                class="rounded-4"
+                src="./image/Main-Testimon1-350x350.jpg"
+                width="120"
+                height="120"
+              />
+              <p class="text-muted fw-medium my-3" style="font-size: 17px">
+                “Highly recommending them! Groffer is delivered to door and
+                honestly, it does seem cheaper compared to store.”
+              </p>
+              <h4 class="text-success font-weight-bold" style="font-size: 18px">
+                Naren Doe
+              </h4>
+            </div>
+            <div class="col-md-3 mb-4">
+              <img
+                alt="A person holding a box of fresh produce in a store"
+                class="rounded-4"
+                src="./image/Main-Testimon2-350x350.jpg"
+                width="120"
+                height="120"
+              />
+              <p class="text-muted fw-medium my-3" style="font-size: 17px">
+                “Groffer always has a unique selection of items I don’t normally
+                see in the store. Their produce is top-notch.”
+              </p>
+              <h4 class="text-success font-weight-bold" style="font-size: 18px">
+                Louis Doe
+              </h4>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
-<footer class="">
-  <div class="container">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 border-bottom">
+    </div>
+    <footer class="">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 border-bottom"
+        >
           <div class="nav-links mb-3 mb-md-0">
-              <a href="#" class="text-decoration-none fw-bold px-2 text-dark"><span class="text-secondary">My account</span></a>
-              <a href="#" class="text-decoration-none fw-bold px-2 text-dark"><span class="text-secondary">Blog</span></a>
-              <a href="#" class="text-decoration-none fw-bold px-2 text-dark"><span class="text-secondary">Personal info</span></a>
-              <a href="#" class="text-decoration-none fw-bold px-2 text-dark"><span class="text-secondary">Wishlist</span></a>
+            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"
+              ><span class="text-secondary">My account</span></a
+            >
+            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"
+              ><span class="text-secondary">Blog</span></a
+            >
+            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"
+              ><span class="text-secondary">Personal info</span></a
+            >
+            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"
+              ><span class="text-secondary">Wishlist</span></a
+            >
           </div>
           <div class="social-icons">
-              <a href="#" class="text-secondary px-3"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="text-secondary px-3"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="text-secondary px-3"><i class="fab fa-skype"></i></a>
-              <a href="#" class="text-secondary px-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-secondary px-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-secondary px-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-secondary px-3"
+              ><i class="fab fa-skype"></i
+            ></a>
+            <a href="#" class="text-secondary px-3"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
+        </div>
       </div>
-  </div>
 
-  <div class="footer py-4">
-      <div class="container">
+      <div class="footer py-4">
+        <div class="container">
           <div class="row">
-              <div class="col-md-3 col-sm-6 mb-4">
-                  <img class="img-fluid w-50" src="./image/Groffer-Logo (1).svg" alt="Groffer Logo">
-                  <p class="text-secondary fw-semibold pt-2">Online grocery shopping and delivery at Groffer. Buy fruits, bread, vegetables.</p>
-                  <img src="./image/footer-apps-300x43.png" alt="Apps" class="pt-4" width="200px" height="auto">
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img
+                class="img-fluid w-50"
+                src="./image/Groffer-Logo (1).svg"
+                alt="Groffer Logo"
+              />
+              <p class="text-secondary fw-semibold pt-2">
+                Online grocery shopping and delivery at Groffer. Buy fruits,
+                bread, vegetables.
+              </p>
+              <img
+                src="./image/footer-apps-300x43.png"
+                alt="Apps"
+                class="pt-4"
+                width="200px"
+                height="auto"
+              />
+            </div>
+            <div class="col-md-2 col-sm-6 mb-4">
+              <h4 class="fw-semibold">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none fw-semibold text-secondary"
+                    href="#"
+                    >Our Services</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none fw-semibold text-secondary"
+                    href="#"
+                    >About Company</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none fw-semibold text-secondary"
+                    href="#"
+                    >Latest News</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none fw-semibold text-secondary"
+                    href="#"
+                    >Meet The Team</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none fw-semibold text-secondary"
+                    href="#"
+                    >Our Products</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 mb-4">
+              <h4 class="fw-semibold">Account</h4>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >Your Account</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >Shipping rates</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >Refunds</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >Delivery Info</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-6 mb-4">
+              <h4 class="fw-semibold">About Us</h4>
+              <ul class="list-unstyled">
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >About Company</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >Our Team</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >Contacts</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >News & Events</a
+                  >
+                </li>
+                <li class="py-1">
+                  <a
+                    class="text-decoration-none text-secondary fw-semibold"
+                    href="#"
+                    >Order Tracking</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+              <h4 class="text-secondary pb-2 fw-bold">
+                Don't hesitate to contact us or call!
+              </h4>
+              <div class="contact-info">
+                <p class="text-secondary">
+                  <i class="fas fa-map-marker-alt text-secondary"></i> 4 Grand
+                  Central Terminal New York, NY 10 City name, CA 90896 United
+                  States.
+                </p>
+                <p class="text-secondary">
+                  <i class="fas fa-envelope text-secondary"></i>
+                  contact@example.com
+                </p>
               </div>
-              <div class="col-md-2 col-sm-6 mb-4">
-                  <h4 class="fw-semibold">Quick Links</h4>
-                  <ul class="list-unstyled">
-                      <li class="py-1"><a class="text-decoration-none fw-semibold text-secondary" href="#">Our Services</a></li>
-                      <li class="py-1"><a class="text-decoration-none fw-semibold text-secondary" href="#">About Company</a></li>
-                      <li class="py-1"><a class="text-decoration-none fw-semibold text-secondary" href="#">Latest News</a></li>
-                      <li class="py-1"><a class="text-decoration-none fw-semibold text-secondary" href="#">Meet The Team</a></li>
-                      <li class="py-1"><a class="text-decoration-none fw-semibold text-secondary" href="#">Our Products</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-2 col-sm-6 mb-4">
-                  <h4 class="fw-semibold">Account</h4>
-                  <ul class="list-unstyled">
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">Your Account</a></li>
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">Shipping rates</a></li>
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">Refunds</a></li>
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">Delivery Info</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-2 col-sm-6 mb-4">
-                  <h4 class="fw-semibold">About Us</h4>
-                  <ul class="list-unstyled">
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">About Company</a></li>
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">Our Team</a></li>
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">Contacts</a></li>
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">News & Events</a></li>
-                      <li class="py-1"><a class="text-decoration-none text-secondary fw-semibold" href="#">Order Tracking</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3 col-sm-6 mb-4">
-                  <h4 class="text-secondary pb-2 fw-bold">Don't hesitate to contact us or call!</h4>
-                  <div class="contact-info">
-                      <p class="text-secondary"><i class="fas fa-map-marker-alt text-secondary"></i> 4 Grand Central Terminal New York, NY 10 City name, CA 90896 United States.</p>
-                      <p class="text-secondary"><i class="fas fa-envelope text-secondary"></i> contact@example.com</p>
-                  </div>
-              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</footer>
+    </footer>
 
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn btn-link" id="loginBtn">Sign in</button>
+            <button type="button" class="btn btn-link" id="signupBtn">New account</button>
+          </div>
+          <div class="modal-body">
+            <!-- Login Form -->
+            <div id="loginForm">
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                </div>
 
-
+                <button type="submit" class="btn btn-success w-100">Log in</button>
+              </form>
+              <a href="#" class="d-block mt-2 text-center text-decoration-none">Forgot your password?</a>
+            </div>
+  
+            <!-- Signup Form (Styled Form) -->
+            <div id="signupForm" class="form-switch">
+              <form class="mt-3">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Username*" />
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control mb-3" placeholder="First name*" />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control mb-3" placeholder="Last name*" />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email*" />
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Create account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./scrpit.js"></script>
   </body>
