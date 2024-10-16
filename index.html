@@ -3,24 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+   <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
     <title>Capstone Project</title>
   </head>
   <body>
-    <!-- Top bar with logo and buy now button -->
     <div class="container-fluid bg-dark py-2">
       <div class="row justify-content-between align-items-center">
         <div class="col-auto">
@@ -33,34 +23,19 @@
         </div>
       </div>
     </div>
-
-    <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg align-items-center">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./image/Groffer-Logo (1).svg" alt="Grof" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"aria-expanded="false"aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <div class="row w-100 align-items-center"> <!-- Added align-items-center to row -->
             <div class="col-lg-8 col-md-6 col-sm-12">
               <form class="input-group">
-                <button
-                  class="btn btn-outline-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Category
                 </button>
                 <ul class="dropdown-menu">
@@ -77,12 +52,7 @@
                   <li><a class="dropdown-item" href="#">Berries</a></li>
                   <li><a class="dropdown-item" href="#">Citrus</a></li>
                 </ul>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search products..."
-                  aria-label="Search products"
-                />
+                <input type="text" class="form-control"placeholder="Search products..."aria-label="Search products"/>
                 <button class="btn btn-outline-secondary" type="submit">
                   <iconify-icon icon="material-symbols-light:search"></iconify-icon>
                 </button>
@@ -112,19 +82,10 @@
         </div>
       </div>
     </nav>
-    <hr />
+    <hr/>
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
       <div class="container-fluid">
-        <!-- Hamburger Menu for Mobile -->
-        <button
-          class="navbar-toggler justify-content-center"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler justify-content-center"type="button"data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -162,27 +123,19 @@
               <a class="nav-link" href="#">Pages</a>
             </li>
           </ul>
-    
-          <!-- Contact Information and "Get a Quote" Button -->
           <div class="d-flex align-items-center">
-            <!-- Phone number -->
             <div class="me-3 d-flex align-items-center">
               <iconify-icon icon="mdi:phone" class="fs-5 me-2"></iconify-icon>
               <span>+0 1800 7777 000</span>
             </div>
-    
-            <!-- Get a Quote Button -->
             <a href="#" class="btn btn-warning">Get a Quote</a>
           </div>
         </div>
       </div>
     </nav>
-    
-    <!-- Hero Section -->
     <section class="hero-section bg-white p-5">
       <div class="container">
         <div class="row align-items-center">
-          <!-- Text Column -->
           <div class="col-md-6">
             <p class="mb-2 fz-1">
               Starting at <span class="highlight">$22</span>
@@ -194,16 +147,10 @@
             <p class="hero-subtext text-secondary">
               Only this weekend for the remaining of the month.
             </p>
-            <a href="#" class="btn shop-now-btn fs-5 mt-3 p-1 btn btn-warning"
-              >Shop Now</a
-            >
+            <a href="#" class="btn shop-now-btn fs-5 mt-3 p-1 btn btn-warning">Shop Now</a>
           </div>
           <div class="col-md-6">
-            <img
-              src="./image/Main-slider_pic.png"
-              alt="Groceries"
-              class="hero-image img-fluid w-100"
-            />
+            <img src="./image/Main-slider_pic.png"alt="Groceries"class="hero-image img-fluid w-100"/>
           </div>
         </div>
       </div>
@@ -244,13 +191,11 @@
       </div>
     </div>
     <hr />
-
     <div>
       <div class="container text-center mt-3"><h1>Top Categories</h1></div>
     </div>
     <div class="container my-5">
       <div class="row">
-        <!-- Category Card -->
         <div class="col-md-3">
           <div class="category-card text-white">
             <div class="category-overlay"></div>
@@ -259,38 +204,18 @@
             <a href="#" class="btn btn-outline-light">View All Items</a>
           </div>
         </div>
-
-        <!-- Product Cards -->
         <div class="col-md-9">
-          <div class="row">
-            <!-- Product 1 -->
+          <div class="row">        
             <div class="col-md-3">
               <div class="card product-card position-relative p-3">
-                <img
-                  src="./image/Angro-Product28.jpg"
-                  class="card-img-top"
-                  alt="Product 1"
-                />
+                <img src="./image/Angro-Product28.jpg"class="card-img-top" alt="Product 1"/>
                 <div class="add-to-cart">
-                  <iconify-icon
-                    icon="mdi:shopping"
-                    class="text-warning-emphasis bg-warning rounded p-1 mx-1"
-                  ></iconify-icon>
+                  <iconify-icon icon="mdi:shopping"class="text-warning-emphasis bg-warning rounded p-1 mx-1"></iconify-icon>
                 </div>
                 <div class="card-body">
-                  <iconify-icon
-                    icon="material-symbols:star"
-                    class="stars text-warning"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star"
-                    class="stars text-warning"
-                  ></iconify-icon>
-                  <img
-                    src="./image/preview.png   width="15px"
-                    class="stac"
-                    alt=""
-                  />
+                  <iconify-icon icon="material-symbols:star" class="stars text-warning"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star" class="stars text-warning"></iconify-icon>
+                  <img src="./image/preview.png   width="15px" class="stac"/>
                   <iconify-icon icon="material-symbols:star"></iconify-icon>
                   <iconify-icon icon="material-symbols:star"></iconify-icon>
                   <h5 class="card-title">Broccoli and Cauliflower Mix</h5>
@@ -299,111 +224,54 @@
                 </div>
               </div>
             </div>
-
-            <!-- Product 2 -->
             <div class="col-md-3">
               <div class="card product-card position-relative p-3">
-                <img
-                  src="./image/Angro-Product25.jpg"
-                  class="card-img-top"
-                  alt="Product 1"
-                />
+                <img src="./image/Angro-Product25.jpg"class="card-img-top"alt="Product 1"/>
                 <div class="add-to-cart">
-                  <iconify-icon
-                    icon="mdi:shopping"
-                    class="text-warning-emphasis bg-warning rounded p-2"
-                  ></iconify-icon>
+                  <iconify-icon icon="mdi:shopping"class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
                 </div>
                 <div class="card-body">
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
                   <h5 class="card-title">Cadbury Crunchie Chocolate Bar</h5>
                   <p class="price">€90.00</p>
                   <p class="text-muted">per Kilogram</p>
                 </div>
               </div>
             </div>
-
-            <!-- Product 3 -->
             <div class="col-md-3">
               <div class="card product-card position-relative p-3">
-                <img
-                  src="./image/Angro-Product06.jpg"
-                  class="card-img-top"
-                  alt="Product 1"
-                />
+                <img src="./image/Angro-Product06.jpg"class="card-img-top"alt="Product 1"/>
                 <div class="add-to-cart">
-                  <iconify-icon
-                    icon="mdi:shopping"
-                    class="text-warning-emphasis bg-warning rounded p-2"
-                  ></iconify-icon>
+                  <iconify-icon icon="mdi:shopping"class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
                 </div>
                 <div class="card-body">
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
                   <h5 class="card-title">Fresh For The Bold Ground</h5>
                   <p class="price">€43.00</p>
                   <p class="text-muted">per Kilogram</p>
                 </div>
               </div>
             </div>
-
-            <!-- Product 4 -->
-            <div class="col-md-3">
+              <div class="col-md-3">
               <div class="card product-card position-relative p-3">
-                <img
-                  src="./image/Angro-Product09.jpg"
-                  class="card-img-top"
-                  alt="Product 1"
-                />
+                <img src="./image/Angro-Product09.jpg" class="card-img-top" alt="Product 1"/>
                 <div class="add-to-cart">
-                  <iconify-icon
-                    icon="mdi:shopping"
-                    class="text-warning-emphasis bg-warning rounded p-1"
-                  ></iconify-icon>
+                  <iconify-icon icon="mdi:shopping"class="text-warning-emphasis bg-warning rounded p-1"></iconify-icon>
                 </div>
                 <div class="card-body">
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
                   <h5 class="card-title">Frito-Lay Doritos Cheetos Mix</h5>
                   <p class="price">€80.00</p>
                   <p class="text-muted">per Kilogram</p>
@@ -416,19 +284,11 @@
     </div>
     <div class="container my-5">
       <div class="row">
-        <!-- Category Card -->
         <div class="col-md-3 w-25">
           <div class="card product-card position-relative p-3">
-            <img
-              src="./image/Angro-Product09.jpg"
-              class="card-img-top"
-              alt="Product 1"
-            />
+            <img src="./image/Angro-Product09.jpg" class="card-img-top"alt="Product 1"/>
             <div class="add-to-cart">
-              <iconify-icon
-                icon="mdi:shopping"
-                class="text-warning-emphasis bg-warning rounded p-1"
-              ></iconify-icon>
+              <iconify-icon icon="mdi:shopping"class="text-warning-emphasis bg-warning rounded p-1"></iconify-icon>
             </div>
             <div class="card-body">
               <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
@@ -442,40 +302,20 @@
             </div>
           </div>
         </div>
-
-        <!-- Product Cards -->
         <div class="col-md-9">
           <div class="row">
-           
             <div class="col-md-3">
               <div class="card product-card position-relative p-3">
-                <img
-                  src="./image/Angro-Product06.jpg"
-                  class="card-img-top"
-                  alt="Product 1"
-                />
+                <img src="./image/Angro-Product06.jpg" class="card-img-top"alt="Product 1"/>
                 <div class="add-to-cart">
-                  <iconify-icon
-                    icon="mdi:shopping"
-                    class="text-warning-emphasis bg-warning rounded p-2"
-                  ></iconify-icon>
+                  <iconify-icon icon="mdi:shopping"class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
                 </div>
                 <div class="card-body">
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
                   <h5 class="card-title">Fresh For The Bold Ground</h5>
                   <p class="price">€43.00</p>
                   <p class="text-muted">per Kilogram</p>
@@ -483,35 +323,19 @@
               </div>
             </div>
 
+            <!-- Product 2 -->
             <div class="col-md-3">
               <div class="card product-card position-relative p-3">
-                <img
-                  src="./image/Angro-Product25.jpg"
-                  class="card-img-top"
-                  alt="Product 1"
-                />
+                <img src="./image/Angro-Product25.jpg" class="card-img-top" alt="Product 1"/>
                 <div class="add-to-cart">
-                  <iconify-icon
-                    icon="mdi:shopping"
-                    class="text-warning-emphasis bg-warning rounded p-2"
-                  ></iconify-icon>
+                  <iconify-icon icon="mdi:shopping" class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
                 </div>
                 <div class="card-body">
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
                   <h5 class="card-title">Cadbury Crunchie Chocolate Bar</h5>
                   <p class="price">€90.00</p>
                   <p class="text-muted">per Kilogram</p>
@@ -522,33 +346,16 @@
             <!-- Product 3 -->
             <div class="col-md-3">
               <div class="card product-card position-relative p-3">
-                <img
-                  src="./image/Angro-Product06.jpg"
-                  class="card-img-top"
-                  alt="Product 1"
-                />
+                <img src="./image/Angro-Product06.jpg" class="card-img-top"alt="Product 1"/>
                 <div class="add-to-cart">
-                  <iconify-icon
-                    icon="mdi:shopping"
-                    class="text-warning-emphasis bg-warning rounded p-2"
-                  ></iconify-icon>
+                  <iconify-icon icon="mdi:shopping"class="text-warning-emphasis bg-warning rounded p-2"></iconify-icon>
                 </div>
                 <div class="card-body">
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
-                  <iconify-icon
-                    icon="material-symbols:star-outline"
-                  ></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
+                  <iconify-icon icon="material-symbols:star-outline"></iconify-icon>
                   <h5 class="card-title">Fresh For The Bold Ground</h5>
                   <p class="price">€43.00</p>
                   <p class="text-muted">per Kilogram</p>
@@ -571,66 +378,25 @@
       </div>
     </div>
 
-    <section class="special-offer bg-white text-center position-relative">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Fruit Box Image -->
-          <div class="col-md-6 text-center">
-            <img
-              src="./image/Main_Deal-Banner.png"
-              alt="Organic Fruit Box"
-              class="fruit-box-img"
-            />
-          </div>
-          <!-- Text and Countdown -->
-          <div class="col-md-6">
-            <p class="text-warning">Special Offer</p>
-            <h1 class="display-4">Organic Fruit Box</h1>
-            <p>
-              Organic foods are the only source which we can rely on to take
-              proper health care. Organic food is the most nutritious food and
-              should be consumed by everyone.
-            </p>
-            <!-- Countdown Timer -->
-            <div class="countdown fw-bold">
-              <div
-                class="d-flex text-center align-items-center justify-content-center"
-              >
-                <div>
-                  <span>-65-5</span>
-                  <p class="countdown-1 text-dark">Days</p>
-                </div>
-                <div>
-                  <span> -3</span>
-                  <p class="countdown-1 text-dark">Hours</p>
-                </div>
-                <br />
-                <div>
-                  <span>: 0</span>
-                  <p class="countdown-1 text-dark">Mins</p>
-                </div>
-                <div>
-                  <span>- : 14</span>
-                  <p class="countdown-1 text-dark">Seconds</p>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="btn btn-warning mt-3">View All Deals</a>
-          </div>
-        </div>
+    <div class="offer-section container">
+      <div class="fruit-box col-md-6">
+          <img src="./image/Main_Deal-Banner.png" alt="Fruit Box" class="img-fluid">
       </div>
-      <img
-        src="./image/carrot.png"
-        alt="Carrot"
-        class="carrot-img d-none d-md-block"
-      />
-    </section>
+      <div class="offer-details col-md-6 text-center">
+          <h2>Special Offer</h2>
+          <h2 class="text-success">Organic Fruit Box</h2>
+          <p>Organic foods are the only source which we can rely on to take proper health care. Organic food is the most nutritious food and should be consumed by everyone.</p>
+          <div class="countdown">
+              -70-6-4-3-21
+          </div>
+          <button class="btn btn-custom mt-4">View All Deals</button>
+      </div>
+      <img src="./image/carrot.png" alt="Carrot" class="carrot">
+    </div>
 
-    <!-- Best Selling Items -->
 
     <div class="container my-4">
       <div class="row justify-content-between align-items-center">
-        <!-- Left Side: Title -->
         <div class="col-auto">
           <h2>Best Selling Items</h2>
         </div>
@@ -644,7 +410,7 @@
         </div>
       </div>
     </div>
-    <hr class="container" />
+    <hr class="container"/>
 
     <div class="container mt-4">
       <div class="row g-3">
@@ -724,7 +490,7 @@
         </div>
       </div>
     </div>
-    <hr />
+    <hr/>
 
     <div class="container mt-4">
       <div class="row g-3">
@@ -802,61 +568,37 @@
             <div class="row justify-content-center">
               <div class="col-6 col-md-2 mb-3">
                 <div class="lifestyle-card bg-white text-center">
-                  <img
-                    src="./image/download (1).png"
-                    class="lifestyle-icon w-75"
-                    alt="Vegan"
-                  />
+                  <img src="./image/download (1).png" class="lifestyle-icon w-75" alt="Vegan"/>
                   <p>Vegan</p>
                 </div>
               </div>
               <div class="col-6 col-md-2 mb-3">
                 <div class="lifestyle-card bg-white text-center">
-                  <img
-                    src="./image/Main-category2 (1).svg"
-                    class="lifestyle-icon w-75"
-                    alt="Gluten-Free"
-                  />
+                  <img src="./image/Main-category2 (1).svg" class="lifestyle-icon w-75" alt="Gluten-Free"/>
                   <p>Gluten-Free</p>
                 </div>
               </div>
               <div class="col-6 col-md-2 mb-3">
                 <div class="lifestyle-card">
-                  <img
-                    src="./image/23.svg"
-                    class="lifestyle-icon mx-auto w-75"
-                    alt="Paleo"
-                  />
+                  <img src="./image/23.svg" class="lifestyle-icon mx-auto w-75" alt="Paleo"/>
                   <p>Paleo</p>
                 </div>
               </div>
               <div class="col-6 col-md-2 mb-3">
                 <div class="lifestyle-card">
-                  <img
-                    src="./image/keto.svg"
-                    class="lifestyle-icon mx-auto w-75"
-                    alt="Keto"
-                  />
+                  <img src="./image/keto.svg" class="lifestyle-icon mx-auto w-75" alt="Keto"/>
                   <p>Keto</p>
                 </div>
               </div>
               <div class="col-6 col-md-2 mb-3">
                 <div class="lifestyle-card">
-                  <img
-                    src="./image/flex.svg"
-                    class="lifestyle-icon mx-auto w-75"
-                    alt="Flexitarian"
-                  />
+                  <img src="./image/flex.svg" class="lifestyle-icon mx-auto w-75" alt="Flexitarian"/>
                   <p>Flexitarian</p>
                 </div>
               </div>
               <div class="col-6 col-md-2 mb-3">
                 <div class="lifestyle-card">
-                  <img
-                    src="./image/fast.svg"
-                    class="lifestyle-icon mx-auto w-75"
-                    alt="Fasting"
-                  />
+                  <img src="./image/fast.svg" class="lifestyle-icon mx-auto w-75" alt="Fasting"/>
                   <p>Fasting</p>
                 </div>
               </div>
@@ -868,30 +610,19 @@
 
     <div class="container mt-4">
       <div class="row">
-        <!-- Left Column: Text Overlay on Image -->
         <div class="col-lg-6 col-md-12 mb-4 position-relative">
-          <img
-            src="./image/mango.png"
-            alt="Lemon Cans Image"
-            class="img-fluid w-100"
-          />
+          <img src="./image/mango.png" alt="Lemon Cans Image"class="img-fluid w-100"/>
           <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
             <p class="text-muted m-2">10% At Any Nearest Stores.</p>
             <h4 class="fw-bold p-2">
-              30% Off On <br />
+              30% Off On <br/>
               All Veggies
             </h4>
             <a href="#" class="btn btn-success m-2">Shop Now</a>
           </div>
         </div>
-
-        <!-- Right Column: Text Overlay on Image -->
         <div class="col-lg-6 col-md-12 mb-4 position-relative">
-          <img
-            src="./image/red.jpeg"
-            alt="Fruits & Nuts Image"
-            class="img-fluid w-100"
-          />
+          <img src="./image/red.jpeg" alt="Fruits & Nuts Image" class="img-fluid w-100"/>
           <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
             <p class="text-muted m-2">20% Online Orders Only.</p>
             <h4 class="fw-bold m-2">
@@ -906,75 +637,41 @@
 
     <div class="container my-5">
       <div class="row text-center">
-        <!-- Local Pickup -->
         <div class="col-12 col-md-3 mb-4">
-          <img
-            src="./image/Main_service1-150x150.png"
-            alt="Local Pickup"
-            class="img-fluid"
-          />
+          <img src="./image/Main_service1-150x150.png" alt="Local Pickup" class="img-fluid"/>
           <h5 class="mt-3">Local Pickup</h5>
           <p>Get orders faster while avoiding shipping fees</p>
         </div>
-        <!-- Local Delivery -->
         <div class="col-12 col-md-3 mb-4">
-          <img
-            src="./image/main 2.png"
-            alt="Local Delivery"
-            class="img-fluid"
-          />
+          <img src="./image/main 2.png" alt="Local Delivery" class="img-fluid"/>
           <h5 class="mt-3">Local Delivery</h5>
           <p>100% curbside recyclable boxes on demand</p>
         </div>
-        <!-- Conscious Eaters -->
         <div class="col-12 col-md-3 mb-4">
-          <img
-            src="./image/sawa pann.png"
-            alt="Conscious Eaters"
-            class="img-fluid"
-          />
+          <img src="./image/sawa pann.png" alt="Conscious Eaters" class="img-fluid"/>
           <h5 class="mt-3">Conscious Eaters</h5>
           <p>We are supporting small farmers and producers</p>
         </div>
-        <!-- Delicious & New Food -->
         <div class="col-12 col-md-3 mb-4">
-          <img
-            src="./image/akhroot.png"
-            alt="Delicious & New Food"
-            class="img-fluid"
-          />
+          <img src="./image/akhroot.png" alt="Delicious & New Food" class="img-fluid"/>
           <h5 class="mt-3">Delicious & New Food</h5>
           <p>Feel great about what you eat every day</p>
         </div>
       </div>
     </div>
     <div class="position-relative py-5">
-      <img
-        alt="A bowl of mixed vegetable salad"
-        class="position-absolute"
-        style="top: -50px; right: 50px; width: 300px; height: auto"
-        src="./image/BG-02.png"
-      />
+      <img alt="A bowl of mixed vegetable salad" class="position-absolute" style="top: -50px; right: 50px; width: 300px; height: auto" src="./image/BG-02.png"/>
       <div style="background-color: #e6f0f5" class="py-5">
         <div class="container text-center my-5">
           <h2 class="text-warning" style="font-size: 24px; margin-bottom: 10px">
             Client Reviews
           </h2>
-          <h3
-            class="font-weight-bold"
-            style="color: #333; font-size: 36px; margin-bottom: 40px"
-          >
+          <h3 class="font-weight-bold" style="color: #333; font-size: 36px; margin-bottom: 40px">
             From The People
           </h3>
           <div class="row justify-content-center">
             <div class="col-md-3 mb-4">
-              <img
-                alt="A person holding fresh vegetables in a garden"
-                class="rounded-4"
-                src="./image/Main-testimon3-350x350.jpg"
-                width="120"
-                height="120"
-              />
+              <img alt="A person holding fresh vegetables in a garden" class="rounded-4" src="./image/Main-testimon3-350x350.jpg" width="120" height="120"/>
               <p class="text-muted fw-medium my-3" style="font-size: 17px">
                 “What a beautiful haul from Groffer Market week! It is basically
                 a chef’s dream. Definitely have a lot to work.”
@@ -984,13 +681,7 @@
               </h4>
             </div>
             <div class="col-md-3 mb-4">
-              <img
-                alt="A person holding a basket of fresh produce"
-                class="rounded-4"
-                src="./image/Main-Testimon1-350x350.jpg"
-                width="120"
-                height="120"
-              />
+              <img alt="A person holding a basket of fresh produce" class="rounded-4" src="./image/Main-Testimon1-350x350.jpg" width="120" height="120"/>
               <p class="text-muted fw-medium my-3" style="font-size: 17px">
                 “Highly recommending them! Groffer is delivered to door and
                 honestly, it does seem cheaper compared to store.”
@@ -1019,38 +710,20 @@
         </div>
       </div>
     </div>
-    <footer class="">
+    <footer>
       <div class="container">
-        <div
-          class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 border-bottom"
-        >
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 border-bottom">
           <div class="nav-links mb-3 mb-md-0">
-            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"
-              ><span class="text-secondary">My account</span></a
-            >
-            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"
-              ><span class="text-secondary">Blog</span></a
-            >
-            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"
-              ><span class="text-secondary">Personal info</span></a
-            >
-            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"
-              ><span class="text-secondary">Wishlist</span></a
-            >
+            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"><span class="text-secondary">My account</span></a>
+            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"><span class="text-secondary">Blog</span></a>
+            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"><span class="text-secondary">Personal info</span></a>
+            <a href="#" class="text-decoration-none fw-bold px-2 text-dark"><span class="text-secondary">Wishlist</span></a>
           </div>
           <div class="social-icons">
-            <a href="#" class="text-secondary px-3"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" class="text-secondary px-3"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="#" class="text-secondary px-3"
-              ><i class="fab fa-skype"></i
-            ></a>
-            <a href="#" class="text-secondary px-3"
-              ><i class="fab fa-instagram"></i
-            ></a>
+            <a href="#" class="text-secondary px-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-secondary px-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-secondary px-3"><i class="fab fa-skype"></i></a>
+            <a href="#" class="text-secondary px-3"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -1059,60 +732,30 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-6 mb-4">
-              <img
-                class="img-fluid w-50"
-                src="./image/Groffer-Logo (1).svg"
-                alt="Groffer Logo"
-              />
+              <img class="img-fluid w-50" src="./image/Groffer-Logo (1).svg" alt="Groffer Logo"/>
               <p class="text-secondary fw-semibold pt-2">
                 Online grocery shopping and delivery at Groffer. Buy fruits,
                 bread, vegetables.
               </p>
-              <img
-                src="./image/footer-apps-300x43.png"
-                alt="Apps"
-                class="pt-4"
-                width="200px"
-                height="auto"
-              />
+              <img src="./image/footer-apps-300x43.png "Apps" class="pt-4" width="200px" height="auto"/>
             </div>
             <div class="col-md-2 col-sm-6 mb-4">
               <h4 class="fw-semibold">Quick Links</h4>
               <ul class="list-unstyled">
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none fw-semibold text-secondary"
-                    href="#"
-                    >Our Services</a
-                  >
+                  <a class="text-decoration-none fw-semibold text-secondary"href="#">Our Services</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none fw-semibold text-secondary"
-                    href="#"
-                    >About Company</a
-                  >
+                  <a class="text-decoration-none fw-semibold text-secondary"href="#">About Company</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none fw-semibold text-secondary"
-                    href="#"
-                    >Latest News</a
-                  >
+                  <a class="text-decoration-none fw-semibold text-secondary"href="#">Latest News</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none fw-semibold text-secondary"
-                    href="#"
-                    >Meet The Team</a
-                  >
+                  <a class="text-decoration-none fw-semibold text-secondary"href="#">Meet The Team</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none fw-semibold text-secondary"
-                    href="#"
-                    >Our Products</a
-                  >
+                  <a class="text-decoration-none fw-semibold text-secondary"href="#">Our Products</a>
                 </li>
               </ul>
             </div>
@@ -1120,72 +763,34 @@
               <h4 class="fw-semibold">Account</h4>
               <ul class="list-unstyled">
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >Your Account</a
-                  >
+                  <a class="text-decoration-none text-secondary fw-semibold href="#">Your Account</a></li>
+                <li class="py-1">
+                  <a class="text-decoration-none text-secondary fw-semibold"href="#">Shipping rates</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >Shipping rates</a
-                  >
+                  <a class="text-decoration-none text-secondary fw-semibold"href="#">Refunds</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >Refunds</a
-                  >
-                </li>
-                <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >Delivery Info</a
-                  >
-                </li>
+                  <a class="text-decoration-none text-secondary fw-semibold"href="#">Delivery Info</a></li>
               </ul>
             </div>
             <div class="col-md-2 col-sm-6 mb-4">
               <h4 class="fw-semibold">About Us</h4>
               <ul class="list-unstyled">
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >About Company</a
-                  >
+                  <a class="text-decoration-none text-secondary fw-semibold"href="#">About Company</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >Our Team</a
-                  >
+                  <a class="text-decoration-none text-secondary fw-semibold"href="#">Our Team</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >Contacts</a
-                  >
+                  <a class="text-decoration-none text-secondary fw-semibold"href="#">Contacts</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >News & Events</a
-                  >
+                  <a class="text-decoration-none text-secondary fw-semibold"href="#">News & Events</a>
                 </li>
                 <li class="py-1">
-                  <a
-                    class="text-decoration-none text-secondary fw-semibold"
-                    href="#"
-                    >Order Tracking</a
-                  >
+                  <a class="text-decoration-none text-secondary fw-semibold"href="#">Order Tracking</a>
                 </li>
               </ul>
             </div>
@@ -1209,8 +814,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Modal -->
 <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1226,28 +829,28 @@
       </div>
       <div class="modal-body">
         <div class="tab-content" id="authTabContent">
-          <!-- Sign In Form -->
           <div class="tab-pane fade show active" id="signInContent" role="tabpanel" aria-labelledby="signInTab">
-            <form>
+            <form class="signInForm">
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <input type="password" class="form-control" id="userPassword" placeholder="Password" required>
               </div>
               <div class="form-check mb-3">
                 <input class="form-check-input" type="checkbox" id="rememberMe">
                 <label class="form-check-label" for="rememberMe">Remember me</label>
               </div>
+              
               <button type="submit" class="btn btn-success w-100">Log in</button>
               <div class="mt-3 text-center">
                 <a href="#">Forgot your password?</a>
               </div>
             </form>
           </div>
-          <!-- New Account Form -->
+          
           <div class="tab-pane fade" id="newAccountContent" role="tabpanel" aria-labelledby="newAccountTab">
             <form>
               <div class="mb-3">
@@ -1265,7 +868,7 @@
                 </div>
               </div>
               <div class="mb-3">
-                <label for="emailCreate" class="form-label">Email</label>
+                <label for="emailCreate">Email</label>
                 <input type="email" class="form-control" id="emailCreate" placeholder="Email" required>
               </div>
               <button type="submit" class="btn btn-primary w-100">Create account</button>
@@ -1277,15 +880,9 @@
   </div>
 </div>
 
-<!-- Button to trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#authModal">
-  Open Modal
-</button>
-
-<!-- Include Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
-    <script src="./scrpit.js"></script>
+    <script src="./script/scrpit.js"></script>
   </body>
 </html>
