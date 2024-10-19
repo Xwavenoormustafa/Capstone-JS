@@ -209,7 +209,7 @@ body {
   font-size: 18px;
 }
 .Lifestyle{
-background-image: url(./image/Main-services_bg1.jpg);
+background-image: url(../image/Main-services_bg1.jpg);
 background-size: cover;
  background-size: cover; background-position: center;
  background-position: center;
@@ -233,8 +233,6 @@ background-size: cover;
 }
 .btn-custom {
     background-color: #20663c;
-    color: white;
-    width: 100%;
 }
 .modal-content {
     border-radius: 10px;
