@@ -1,241 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Grotesk", sans-serif;
+
 }
-h1.size{
+body{
   font-family: "Space Grotesk", sans-serif;
-  font-size: 63px;
 }
-.lifestyle-card {
-  background-color: #fff;
+
+.card{
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 20px;
   transition: transform 0.2s;
 }
-.lifestyle-card:hover {
+.card:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-.lifestyle-icon {
+
+
+.icon {
   font-size: 40px;
-  margin-bottom: 10px;
 }
-.navbar-brand img {
-  height: 40px;
-}
-.shop {
-  position: relative;
-}
-.badge {
-  font-size: 0.8rem;
-}
-.highlight {
-  color: #22c55e;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-  .hero-text {
-    font-size: 2rem;
-  }
-  .hero-section {
-    text-align: center;
-  }
-}
-html,
-body {
-  overflow-x: hidden;
-}
-.feature-box {
-  margin-bottom: 20px;
-}
-.feature-box img {
-  width: 50px;
-  height: auto;
-  margin-bottom: 15px;
-}
-.feature-box h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-.category-card {
-  position: relative;
- background-image: url(../image/Groffer-bann_categ1\ \(1\).jpg);
+.back-imd-set{
+  background-image: url(../images/backimg.png);
+  height: 70vh;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  padding: 20px;
-  width: 270px;
-  border-radius: 10px;
-  height: 100%;
+
 }
-.category-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+.promo-card {
   border-radius: 10px;
 }
-.category-card h2 {
-  z-index: 1;
-  position: relative;
+.promo-text {
+  flex: 1;
 }
-.category-card p {
-  z-index: 1;
-  position: relative;
-}
-.product-card {
-  border-radius: 15px;
-  transition: box-shadow 0.3s ease;
-}
-.product-card:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-.product-card img {
+
+.card-setting{
+  background-color: #fff;
   border-radius: 10px;
-  max-width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+
 }
-.add-to-cart {
-  position: absolute;
-  top: 3px;
-  right: 7px;
-  border-radius: 20px;
-  padding: 6px;
+.card-setting:hover{
+  transform: scale(1.03);
   cursor: pointer;
 }
-.stac{
-    margin-top: -9px;   
-}
-.beg{
-   margin-left: -73px;
-   margin-top: 10px;
-}
-.special-offer {
- background-size: cover;
- background-color: #f5efdf;
- width: 100%;
- max-width: 100%;
+
+.cards-set:hover{
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
-.offer-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  position: relative; /* Needed for absolute positioning */
+.cards-set{
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
-.offer-details h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+.set-hovr:hover{
+  transform: scale(1.02);
+  cursor: pointer;
 }
-.offer-details p {
-  font-size: 1.1rem;
-  margin-top: 15px;
-  margin-bottom: 25px;
+.hero-text{
+  font-size: 70px;
+  font-weight: bolder;
 }
-.countdown {
-  font-size: 2rem;
-  color: #28a745;
+.psitn-1{
+  position: relative;
 }
-.btn-custom {
-  background-color: #ffc107;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  border-radius: 5px;
+.psitn-2{
+position: absolute;
+top: 135px;
+left: 38px;
 }
-.btn-custom:hover {
-  background-color: #e0a800;
-  color: #fff;
+.back-clr{background-color:rgb(227, 238, 243);}
+.back-clr-1{background-color: rgb(245, 239, 223);}
+#formCard {
+  display: none; /* Initially hidden */
 }
-.fruit-box img {
-  max-width: 100%;
-  height: auto;
-}
-/* Carrot Image Styling */
-.carrot {
-  position: absolute;
-  top: 1%;
-  right: 0;
-  transform: translate(50%, 0); /* Adjust the position */
-  max-width: 220px;
-  height: auto;
-}
-
-.fruit-box-img {
-  max-width: 100%;
-  height: auto;
-}
-.countdown {
-  color: #2cb380;
-  font-size: 3rem;
-}
-.countdown-1{
-  font-size: 15px;
-}
-.carrot-img {
-  position: absolute;
-  right: 0;
-  top: -21%;
-  width: 350px;
-  height: 300px;
-  margin-left:230px;
-}
-.product-card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-.product-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.product-title {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.product-price {
-  color: #28a745;
-  font-size: 18px;
-}
-.Lifestyle{
-background-image: url(../image/Main-services_bg1.jpg);
-background-size: cover;
- background-size: cover; background-position: center;
- background-position: center;
- padding: 50px 0;
-}
-.modal-header {
-    border-bottom: none;
-}
-.nav-tabs .nav-link.active {
-    background-color: #20663c;
-    color: white;
-}
-.nav-tabs .nav-link {
-    border: none;
-    color: #20663c;
+@media (max-width: 680px) {
+  .hero-text {
+    font-size: 30px;
     font-weight: bold;
+    margin-top: 20px;
+  }
 }
-.form-control {
-    border-radius: 5px;
-    padding: 10px;
-}
-.btn-custom {
-    background-color: #20663c;
-}
-.modal-content {
-    border-radius: 10px;
-}
-
-
